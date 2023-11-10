@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="code.js"></script>
+    <title>ЛР7</title>
+</head>
+
+<body>
+    <header>
+        <h1>Лабораторна робота №7</h1>
+        <h2>Виконав студент групи АнД-31 Пархоменко Е. Д.</h2>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li><a href="../lab6/index.html">Лабораторна робота №1</a></li>
+            <li><a class="b-menu_select" href="index.html">Лабораторна робота №2</a></li>
+            <li><a href="#!">Лабораторна робота №3</a></li>
+            <li><a href="#!">Лабораторна робота №4</a></li>
+            <li><a href="#!">Лабораторна робота №5</a></li>
+        </ul>
+    </nav>
+
+    <nav class="navbar-burger">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="flex menu_btn" for="menu-toggle">
+            <span></span>
+        </label>
+        <ul class="navbar__list">
+            <li><a href="../lab6/index.html">Лабораторна робота №1</a></li>
+            <li><a class="b-menu_select" href="index.html">Лабораторна робота №2</a></li>
+            <li><a href="#!">Лабораторна робота №3</a></li>
+            <li><a href="#!">Лабораторна робота №4</a></li>
+            <li><a href="#!">Лабораторна робота №5</a></li>
+        </ul>
+    </nav>
+
+    <h2>Завдання лабораторної</h2>
+    <div class="b-task">
+        На Вашій сторінці є кнопка. При наведенні на неї вивести текст.
+        Ввести групу (з клавіатури), прізвище студента та курс (поля
+        вводу). Якщо неправильно вказано курс (перша цифра номеру
+        групи), вивести попередження, інакше вивести повне ім’я
+        студента.
+    </div>
+    <div class = "input_wrapper">
+        <label>Група<input type="text" id="group" value="AnD31"> </label>
+        <label>Прізвище<input type="text" id="surname" value="Parhomenko"></label>
+        <label>Курс<input type="number" id="class" value="3"></label>
+    </div>
+    <button id="verify" onmouseover="print()" onmouseout="clear_all()">
+        Кнопка
+    </button>
+    <div id="print"></div>
+</body>
+
+</html>
